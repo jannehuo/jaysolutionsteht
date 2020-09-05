@@ -1,8 +1,9 @@
 import * as React from "react";
+import Chart from "./components/Chart/Chart";
 import "./scss/App.scss";
 
 const App = () => {
-  return <div>JAY SOLUTIONS</div>;
+  return <Chart />;
 };
 
 export default App;
