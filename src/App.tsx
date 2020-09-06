@@ -1,5 +1,7 @@
 import * as React from "react";
 import Chart from "./components/Chart/Chart";
+import Loading from "./components/Loading/Loading";
+import Error from "./components/Error/Error";
 import "./scss/App.scss";
 
 const url = "http://localhost:8000/data";
@@ -25,11 +27,11 @@ const App = () => {
   }, []);
 
   if (!loaded) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   if (loaded && error) {
-    return <p>Error loading data!</p>;
+    return <Error />;
   }
 
   return <Chart data={data} />;

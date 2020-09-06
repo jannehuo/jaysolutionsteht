@@ -1,7 +1,13 @@
 import * as React from "react";
 import * as Highcharts from "highcharts/highstock";
 
-const Chart = (props: any) => {
+type ChartData = number[][];
+
+interface ChartProps {
+  data: ChartData;
+}
+
+const Chart = (props: ChartProps) => {
   if (props.data.length > 0) {
     Highcharts.stockChart("stock-chart", {
       rangeSelector: {
