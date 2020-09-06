@@ -13,7 +13,7 @@ const Chart = (props: any) => {
 
       series: [
         {
-          type: undefined,
+          type: "ohlc",
           name: "AAPL",
           data: props.data,
           tooltip: {

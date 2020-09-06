@@ -2,7 +2,7 @@ import * as React from "react";
 import Chart from "./components/Chart/Chart";
 import "./scss/App.scss";
 
-const url = "https://demo-live-data.highcharts.com/aapl-c.json";
+const url = "http://localhost:8000/data";
 
 const App = () => {
   const [loaded, setLoaded] = React.useState(false);
